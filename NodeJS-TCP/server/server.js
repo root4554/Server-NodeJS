@@ -5,7 +5,7 @@ const server = net.createServer();
 server.on('connection', (socket) => {
     socket.on('data', (data) => {
         console.log("\nserver received: ", data.toString());
-        socket.write("hello from server, we received your message!");
+        socket.write("Hello from anass server, we received your message!");
     })
     
     socket.on('close', () => {
